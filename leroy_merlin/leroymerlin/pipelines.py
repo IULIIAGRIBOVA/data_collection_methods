@@ -46,7 +46,7 @@ class LeroyPhotosPipeline(ImagesPipeline):
 
     def file_path(self, request, response=None, info=None):
          item = request.meta
-         href = str(item['url'][0]).replace("https://kaliningrad.leroymerlin.ru/product/",'').replace("/", '')
+         href = str(item['url']).replace("https://kaliningrad.leroymerlin.ru/product/",'').replace("/", '')
          img_name = str(request.url).replace('https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_500,h_500,c_pad,b_white,d_photoiscoming.png/LMCode/', '')
          return f'/full/{href}/{img_name}'
 
@@ -56,5 +56,6 @@ class LeroyPhotosPipeline(ImagesPipeline):
        if results:
            item['photos'] = [itm[1] for itm in results if itm[0]]
        return item
+    
 
 
