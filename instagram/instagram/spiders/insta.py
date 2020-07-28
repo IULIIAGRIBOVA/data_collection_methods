@@ -14,7 +14,7 @@ class InstagramSpider(scrapy.Spider):
     allowed_domains = ['instagram.com']
     start_urls = ['https://instagram.com/']
     insta_login = 'mashine_learning'
-    insta_pwd = '#PWD_INSTAGRAM_BROWSER:10:1595269695:AfJQADxArCZVKxfEZJd5mayPcBz3eOhpPgRppAonBxnlZEAnePzROnOLSXeUXVhE7muBOR2B2EakcZzT5/Oj3JbgHCS36SJmUbJpbZqAxUkJ5aMZSZjzt3fP8B1nFo3NCYOkeQPte1q0bKUA'
+    insta_pwd = '#PWD_INSTAGRAM_BROWSER:10:1595269695:AfJQtytryrtytrytrygRppAonBxnlZEAnePzROnOLSXeUXVhE7muBOR2B2EakcZzT5/Oj3JbgHCS36SJmUbJpbZqAxUkJ5aMZSZjzt3fP8B1nFo3NCYOkeQPte1q0bKUA'
     inst_login_link = 'https://www.instagram.com/accounts/login/ajax/'
     parse_user = ['diana__vorobeva', 'lubovlvovna41' ]     #Парсим маму и бабушку
     #parse_user = ['diana__vorobeva']
